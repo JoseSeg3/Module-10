@@ -1,0 +1,32 @@
+interface Animal {
+        void sound();
+    
+       default void eat() {
+        System.out.println("This animal is eating.");
+    }
+}
+
+class Dog implements Animal {
+        public void sound() {
+        System.out.println("The dog barks.");
+    }
+}
+
+class Cat implements Animal {
+        public void sound() {
+        System.out.println("The cat meows.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+                Animal dog = new Dog();
+        Animal cat = new Cat();
+
+        dog.sound();  
+        dog.eat();    
+
+        cat.sound();  
+        cat.eat();    
+    }
+}

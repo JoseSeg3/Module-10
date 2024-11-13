@@ -1,0 +1,5 @@
+When to use one over the other.
+
+
+You would want to use abstract over interface when you want to reduce the amount of code you need to rewrite, with an interface you can only define functionality but you cant implement
+it to anything, you would want and interface when you need something to follow a strict set of rules
